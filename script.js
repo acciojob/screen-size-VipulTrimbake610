@@ -1,6 +1,9 @@
 //your JS code here. If required.
 const div = document.getElementById("sizeInfo");
 const h1 = document.getElementsByTagName("h1")[0];
+	div.style.width = window.innerWidth;
+	div.style.height = window.innerHeight;
+	
 
 
 window.addEventListener("resize",function(){
