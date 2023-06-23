@@ -1,10 +1,10 @@
 //your JS code here. If required.
-const body = document.body;
-const w = window.getComputedStyle(body);
-console.log(w.width);
+const div = document.getElementById("sizeInfo");
+const h1 = document.getElementsByTagName("h1")[0];
 
-body.addEventListener("resize",function(){
-	console.log("hello");
+
+window.addEventListener("resize",function(){
+	h1.innerHTML = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`
 })
 
 
